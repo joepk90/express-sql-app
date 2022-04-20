@@ -19,7 +19,7 @@ Basic Models have been setup:
 Posts has many to one relationship with Users (Posts belongs to Users).
 
 
-Docker MySQL Setup:
+## Docker MySQL Setup:
 https://github.com/joepk90/docker-sql-server
 
 To start the MySQL Server:
@@ -27,3 +27,7 @@ docker-compose up -d
 
 To login to the Docker instance
 docker exec -it express_app_mysql_server /bin/bash
+
+
+## Seed
+npm run seed
