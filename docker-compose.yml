@@ -1,0 +1,18 @@
+version: "3.1"
+volumes:
+    express_app_mysql_server:
+services:
+    mysql:
+      image: mysql:5.6
+      container_name: express_app_mysql_server
+      working_dir: /databases
+      volumes:
+        - ./databases:/databases
+        - express_app_mysql_server:/var/lib/mysql
+      environment:
+        - MYSQL_DATABASE=docker_mysql_database
+        - MYSQL_ROOT_PASSWORD=docker_root
+        - MYSQL_USER=dbuser
+        - MYSQL_PASSWORD=dbpw
+      ports:
+        - "8306:3306"
