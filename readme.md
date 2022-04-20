@@ -31,3 +31,7 @@ docker exec -it express_app_mysql_server /bin/bash
 
 ## Seed
 npm run seed
+
+
+## Postman Collection
+https://www.getpostman.com/collections/d7d829e0a7976713a3e4
